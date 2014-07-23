@@ -26,4 +26,4 @@ RUN /usr/bin/test -e /root/prefix32/drive_c/windows/system32/windowspowershell/v
 ENV WINEDEBUG -all
 # I couldn't get a raw exec to work for some reason
 ADD ps-wrapper.sh /usr/bin/
-ENTRYPOINT [ "/bin/bash", "/usr/bin/ps-wrapper.sh" ]
+CMD [ "/bin/bash", "/usr/bin/ps-wrapper.sh" ]
