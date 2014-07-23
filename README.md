@@ -4,13 +4,20 @@ A docker image that gives you a power shell.
 
 Be powerful!
 
+## Usage
+
+To get a powershell:
+
+    docker run -t -i solarkennedy/powershell
+
+To get a normal cmd shell
+
+    docker run -t -i solarkennedy/powershell /usr/bin/wine cmd
+
 ## FAQ
 
 Q: Why is this only PS 1.0?  
 A: It is the only one I could get to install in Wine
-
-Q: What if I just want the normal command shell?  
-A: docker run -t -i solarkennedy/powershell /usr/bin/wine cmd
 
 Q: I run the IT for a hospital, a pre-natal care unit specifically, and I
 would like to use this code to support the life-support infrastructure. Do 
